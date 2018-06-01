@@ -9,7 +9,7 @@ The application supports the scenarios below:
 - **patch = "/match/add" method POST** - adds new match
 - **patch = "/match/remove/{id}" method DELETE** - delete match by id
 - **patch = "/match/remove" method DELETE** - delete all matches
-
+-----------------------------------------------------------------------------------
 - **patch = "/team/all" method GET** - returns all teams
 - **patch = "/team/{id}" method GET** - returns team by id
 - **patch = "/team/find?name=X" method GET** - returns team with given substring name X name in URL
