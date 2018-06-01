@@ -5,6 +5,8 @@ import com.codecool.krk.javaspringdatakorges.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 
 @Service
 public class TeamServiceImpl implements TeamService {
@@ -31,6 +33,16 @@ public class TeamServiceImpl implements TeamService {
     @Override
     public Iterable<Team> findByMoreThanOneAppearance() {
         return repository.findByMoreThanOneAppearance();
+    }
+
+    @Override
+    public Optional<Team> getById(Long id) {
+        return repository.findById(id);
+    }
+
+    @Override
+    public void create(Team team) {
+        repository.save(team);
     }
 
 }

@@ -2,6 +2,7 @@ package com.codecool.krk.javaspringdatakorges.model;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Set;
 
 
 @Entity
@@ -26,9 +27,7 @@ public class Match {
     private int goalsAway;
 
 
-    public Match() {
 
-    }
 
     public Match(Calendar date, Team homeTeam, Team awayTeam, int goalsHome, int goalsAway) {
 
